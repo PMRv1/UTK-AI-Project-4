@@ -1,2 +1,10 @@
 # Multi-Agent Machine Learning Workflow
-This repository contains two linked projects that explore multi-agent artificial intelligence workflows using the CrewAI framework. In Assignment 5, the project introduces foundational concepts by deploying a Data Analyst and a Stock Predictor managed by a Gemini LLM (later switched to Hugging Face model Qwen2.5-7B-Instruct) in a hierarchical process to analyze finance_data.csv and forecast stock prices based on historical trends. Building upon this, Assignment 5a adapts the architecture to evaluate a custom sports dataset (Hitters.csv), utilizing a Baseball Data Analyst to extract performance metrics and a Sports Insight Synthesizer to formulate actionable salary predictions and team strategies. During the development of Assignment 5a, several key technical challenges were overcome to ensure successful execution within API constraints. To resolve context window limitations, a custom reading tool was modified to feed the agents a condensed Pandas statistical summary instead of the entire raw CSV. Additionally, to avoid execution timeouts and formatting errors associated with hierarchical manager LLMs on free tiers, the workflow was transitioned to a Hugging Face model (Qwen2.5-7B-Instruct) and restructured into a sequential process, enabling the seamless and cost-effective generation of the final analytical report.
+➔ Explores foundational multi-agent artificial intelligence workflows using the CrewAI framework to process complex datasets.
+
+➔ Deploys a data analyst and a stock predictor in Project 4 to evaluate finance_data.csv and forecast stock prices based on historical trends.
+
+➔ Utilizes a baseball data analyst and a sports insight synthesizer in Project 4a to extract performance metrics from Hitters.csv to formulate actionable salary predictions and team strategies.
+
+➔ Resolves context window limitations by modifying a custom reading tool to feed the agents a condensed Pandas statistical summary rather than the entire raw CSV file.
+
+➔ Overcomes free-tier execution timeouts and formatting errors by transitioning from a hierarchical Gemini manager to a sequential process powered by the Hugging Face Qwen2.5-7B-Instruct model to smoothly generate the final analytical reports.
